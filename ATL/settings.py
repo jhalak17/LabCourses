@@ -129,3 +129,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import os
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'ATLLabs', 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Email configuration for Gmail (use appropriate SMTP settings for your provider)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'jhalak.savariya@gmail.com'  # Replace with your email
+EMAIL_HOST_PASSWORD = 'jeoo lzci tyeg aruq'  # Replace with your email password
+DEFAULT_FROM_EMAIL = 'jhalak.savariya@gmail.com'  # Use the same email or another one
